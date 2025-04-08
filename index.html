@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Английские слова</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button class="theme-toggle" onclick="toggleTheme()">Сменить тему</button>
+
+  <div class="counter" id="counter">Слово 1 из 1</div>
+
+  <div class="card" onclick="flipCard()">
+    <div class="inner-card" id="cardInner">
+      <div class="front" id="word">Нажми, чтобы перевернуть</div>
+      <div class="back" id="translation">Перевод</div>
+    </div>
+  </div>
+
+  <div>
+    <button onclick="nextWord()">Следующее</button>
+    <button onclick="sayWord()">Произнести</button>
+    <button onclick="deleteWord()">Удалить</button>
+  </div>
+
+  <div class="form-container">
+    <input type="text" id="newWord" placeholder="Новое слово (англ.)" />
+    <input type="text" id="newTranslation" placeholder="Перевод" />
+    <button onclick="addWord()">Добавить слово</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
